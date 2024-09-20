@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+<h1>Web Instruction: Links</h1>
+    </header>
+<nav>link link link</nav>
+<main>
+<h1>Links</h1>
+<a href=""></a>
+<a href="https://cs401w2018.github.io/projects-lpfrandsen/projects/profilepage.html">Profile Page</a>
+</main>
+<footer>
+&copy; 2024 Landon Frandsen
+    </footer>
+    
+</body>
+</html>
