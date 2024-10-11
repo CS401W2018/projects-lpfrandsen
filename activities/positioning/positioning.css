@@ -1,0 +1,31 @@
+body {
+    background-color: beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#painting {
+    float: left;
+    border: thin solid black;
+    
+}
+#painting img {
+width:300px
+}
+.clear{
+    clear: both;
+}
+nav ul{
+    list-style-type:none;
+    padding:0
+}
+nav li{
+   
+}
+nav a{
+    
+    background-color: blue;
+    color:white;
+    border-bottom: thin solid white;
+    
+    margin-left:10p
+}
