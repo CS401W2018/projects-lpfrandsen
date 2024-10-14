@@ -1,0 +1,41 @@
+body {
+background-color: green;
+font-family: 'Times New Roman', Times, serif;
+color: white;
+font-size: medium;
+font-weight: 200;
+text-transform: none;
+text-shadow: 5in;
+}
+#wrapper {
+    background-color: red;
+    max-width: 600px;
+    
+    margin:auto;
+}
+figure {
+    float: left;
+    border: thin solid white;
+    padding:15px;
+    background-color: green;
+    
+}
+header {
+border: thin solid white;
+margin: 20px;
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif,cursive;
+background-color: green;
+border-radius: 1cm;
+box-shadow: 1cm;
+
+
+}
+a {
+    margin:10px;
+    border:thin solid green;
+    background-color: green;
+    color: white;
+    list-style-type: none;
+    padding: 5px
+} 
