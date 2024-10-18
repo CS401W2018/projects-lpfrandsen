@@ -1,0 +1,15 @@
+body {
+    font-size: medium;
+}
+.container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+.item{
+    background-color: chartreuse;
+    padding: 10px 20px;
+    width: 50px;
+}
