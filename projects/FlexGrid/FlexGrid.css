@@ -10,9 +10,11 @@ body{
     gap: 10px;
 }
 aside{
-    float:left;
-    margin:auto;
-    width: 25%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width:200px;
+    margin: 20px;
     background-color: cadetblue;
     border: thin solid black
 
@@ -25,6 +27,7 @@ aside{
 header{
     background-color: cadetblue;
     text-align: center;
+    margin:50px;
 }
 
 footer{
@@ -36,7 +39,7 @@ footer{
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 .card img {
-    width: 100%; /* Ensure images take up full width of the grid item */
+    width: 100%; 
     height: auto;
     border: thin solid black;
     display: block;
@@ -51,6 +54,9 @@ h1{
     border: thin solid black;
     text-align: center;
 }
+#rock{
+    margin:50px;
+}
 .grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -62,4 +68,8 @@ h1{
     display:block;
     background-color: cadetblue;
     
+}
+.button{
+    display: flex;
+    justify-content: left;
 }
