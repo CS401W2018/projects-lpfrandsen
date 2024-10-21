@@ -37,6 +37,7 @@ footer{
 .card{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
 }
 .card img {
     width: 100%; 
@@ -62,7 +63,7 @@ h1{
     grid-template-columns: repeat(5, 1fr);
     gap:20px;
     text-align: center;
-    text-decoration: none;
+    
 }
 .grid a{
     display:block;
