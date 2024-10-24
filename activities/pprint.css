@@ -1,0 +1,36 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin:0;
+}
+header{
+    background-color: coral;
+    color:aliceblue;
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    background-color: coral;
+    display: block;
+    padding: 10px 15px;
+    color:aliceblue;
+    text-decoration: none;
+}
+
+.bsbl{
+    width: 250px;
+    border: thin solid black;
+    box-shadow: 3px 3px 10px coral;
+    margin: 10px 10px;
+    
+}
+
+.bsbl img{
+    width:100%;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+}
