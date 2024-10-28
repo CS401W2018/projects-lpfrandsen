@@ -1,0 +1,78 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightcyan;
+}
+header{
+    background-color: lightcoral;
+    text-align: center;
+    border:thick solid white;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+}
+nav a{
+    background-color: lightcoral;
+    padding:5px 10px;
+    margin: 5px;
+    border: thick solid white;
+    text-decoration: none;
+}
+.container{
+    display: flex
+}
+aside{
+    display:flex;
+    background-color: lightcoral;
+    flex-direction: column;
+    border:thick solid white;
+    width:30%;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+article{
+    background-color: lightcoral;
+    border:thick solid white;
+    width:200px;
+    margin:5px;
+}
+
+.fam img{
+    width: 100%;
+    height:auto;
+    
+}
+figure{
+    margin:0;
+}
+
+@media only screen and (max-width: 700px) {
+nav{
+    flex-direction: column;
+    gap:5px;
+}
+aside{
+    width:100%;
+    order:2;
+}
+.container{
+    flex-direction: column;
+}
+main{
+    order:1;
+}
+.card{
+    flex-direction: column;
+}
+article{
+    width:90%;
+}
+article img{
+    width:100%;
+}
+}
