@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="tables.css">
 </head>
 <body>
     <header><h1>My Class Schedule</h1></header>
     <main>
-        <table border="1">
-            <tr><th>Dept.</th><th>Number</th><th>Time</th><th>Location</th><th>Credits</th></tr>
+        <table class="Schedule">
+            <caption>My Schedule</caption>
+            <thead>
+            <tr><th>Dept.</th><th>Number</th><th>Time</th><th>Location</th><th>Credits</th></thead></tr><tbody>
             <tr><th colspan="5">Information Technoligies</th></tr>
-            <tr><td>IT</td><td>240</td><td>11am</td><td>P3</td><td rowspan="2">3</td></tr>
+            <tr><td>IT</td><td>240</td><td>11am</td><td>P3</td><td>3</td></tr>
             <tr><td>IT</td><td>240</td><td>12pm</td><td>P2</td></tr>
             <tr><th colspan="5">Computer Science</th></tr>
             <tr><td>CS</td><td>101</td><td>9am</td><td>P2</td><td>2</td></tr>
-            <tr><td>CS</td><td>140</td><td>2pm</td><td>P1</td><td>3</td></tr>
+            <tr><td>CS</td><td>140</td><td>2pm</td><td>P1</td><td>3</td></tr></tbody>
+            <tfoot><tr><th colspan="4">Total Credits</th><td>11</td></tr></tfoot>
         </table>
+        <h2>Questions:</h2>
+        <ul>
+            <li>We avoid using the border properity because it will result in an html error.</li>
+            <li>We can apply css to every other row easily by selecting tbody,then tr, then a colon and "nth-child()". You can then provide the argument odd or even.</li>
+            <li>Tables are to be used when trying to show large amounts of data in and organized fashion. A good table should be easy to read and understand which can be very versatile when conveying information.</li>
+        </ul>
     </main>
 </body>
 </html>

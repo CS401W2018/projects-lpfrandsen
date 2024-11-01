@@ -1,0 +1,30 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Schedule{
+    border: thin solid;
+    margin: 5px auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+
+.Schedule td, .Schedule th {
+    border: thin solid;
+    padding: 10px;
+}
+
+.Schedule thead,.Schedule tfoot{
+    background-color: blue;
+    color: #fff
+}
+.Schedule tbody tr:nth-child(even) {
+    background-color: antiquewhite;
+}
+caption{
+    border: thin solid;
+    background-color: azure;
+}
+
+
