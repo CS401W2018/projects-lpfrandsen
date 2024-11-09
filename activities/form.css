@@ -1,0 +1,28 @@
+fieldset{
+    background-color: chartreuse;
+    box-shadow: 3px 3px 3px;
+}
+legend{
+    background-color: chartreuse;
+    padding: 5px;
+    border: thin solid;
+}
+.form-row{
+    display: flex;
+    flex-direction: row;
+}
+.form-row label{
+    width:150px;
+    text-align: right;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .form-row{
+        flex-direction: column;
+    }
+    .form-row label{
+        text-align: left;
+    }
+}

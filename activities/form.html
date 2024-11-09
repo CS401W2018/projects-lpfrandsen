@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <header>
@@ -11,20 +12,46 @@
     </header>
     <main>
         <form action="processing.html" method="post">
-            First name:<input type="text" name="first"><br>
-            Last name:<input type="text" name="last"><br>
-            Password: <input type="password" name="pass"><br>
-            <input type="submit"><br>
-            <input type="reset"><br>
-            <input type="date"><br>
-            <input type="button" value="dont even think about it"><br>
-            Comments: <textarea name="comments"></textarea>
+            <fieldset>
+                <legend>Hello</legend>
+            <div class="form-row">
+                <label for="fname">First name:</label>
+                <input type="text" name="first" id="fname">
+            </div>
+            <div class="form-row">
+                <label for="lname">Last name:</label>
+                    <input type="text" name="last" id="lname">
+                
+            </div>
+            <div class="form-row">
+                <label for="pword">Password:</label>
+                    <input type="password" name="pass" id="pword">
+            </div>
+            <div class="form-row">
+                <label for="comment">Comments:</label>
+                    <textarea id="fname" name="comments"></textarea>
+            </div>
+            <div class="form-row">
+                <label><input type="radio" name="class" value="red">red</label>
+            </div>
+            <div class="form-row">
+                <label><input type="radio" name="class" value="green">green</label>
+            </div>
+            <div class="form-row">
+                <label><input type="radio" name="class" value="blue">blue</label>
+            </div>
+            <div class="form-row">
+                <label><input type="radio" name="class" value="yellow">yellow</label>
+            </div>
+            <div class="form-row" class="spacer">
+                <input type="submit">
+            </div>
+            </fieldset> 
         </form>
         <h2>Questions:</h2>
         <ul>
-            <li>The action attribute is a link to where you will be taken when you submit the form.</li>
-            <li>The method attribte is used to determine what will happen with the information collected in the form. The two options are POST or GET.</li>
-            <li>The difference between POST and GET is that POST is mainly for adding information in any way. GET will also display the stored information in the url. GET is used when searching a search engine.</li>
+            <li>You can stly your form to even everything out. You can also change background colors using fieldset.</li>
+            <li>My profesor likes to use flex because it is easier to transition into mobile view. It also is just easy to format from columns to row.</li>
         </ul>
     </main>
     <footer>
