@@ -1,28 +1,70 @@
-fieldset{
-    background-color: chartreuse;
-    box-shadow: 3px 3px 3px;
+body{
+    background-color: gainsboro;
 }
-legend{
-    background-color: chartreuse;
-    padding: 5px;
-    border: thin solid;
+header{
+    background-color: aquamarine;
+    text-align: center;
+    padding:5px;
+    margin:10px;
+    
 }
+h1{
+    padding: 0;
+    margin:0;
+}
+p{
+    margin:0;
+}
+footer{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 10px;
+    margin:10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .form-row{
     display: flex;
-    flex-direction: row;
+    margin: 5px;
 }
+
 .form-row label{
     width:150px;
     text-align: right;
 }
-
-
+legend{
+    background-color: aquamarine;
+    padding:5px;
+}
+.spacer{
+    display: flex;
+    justify-content: center;
+    width:45%;
+}
+input{
+    background-color:aliceblue;
+    border-radius: 10px;
+    padding:3px;
+}
+textarea{
+    background-color: aliceblue;
+}
+fieldset{
+    background-color: white;
+}
 
 @media only screen and (max-width: 600px){
     .form-row{
         flex-direction: column;
+        width:50%
     }
     .form-row label{
         text-align: left;
     }
+    spacer{
+        width: 0;
+    }
+    .mspacer{
+        width:100%;
+    } 
 }

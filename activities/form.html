@@ -8,54 +8,57 @@
 </head>
 <body>
     <header>
-        <h1>Web Design</h1>
+        <h1>Landons fun website of forms</h1>
     </header>
     <main>
-        <form action="processing.html" method="post">
+        <form action="form.html" id="myForm">
             <fieldset>
-                <legend>Hello</legend>
-            <div class="form-row">
-                <label for="fname">First name:</label>
-                <input type="text" name="first" id="fname">
-            </div>
-            <div class="form-row">
-                <label for="lname">Last name:</label>
-                    <input type="text" name="last" id="lname">
-                
-            </div>
-            <div class="form-row">
-                <label for="pword">Password:</label>
-                    <input type="password" name="pass" id="pword">
-            </div>
-            <div class="form-row">
-                <label for="comment">Comments:</label>
-                    <textarea id="fname" name="comments"></textarea>
-            </div>
-            <div class="form-row">
-                <label><input type="radio" name="class" value="red">red</label>
-            </div>
-            <div class="form-row">
-                <label><input type="radio" name="class" value="green">green</label>
-            </div>
-            <div class="form-row">
-                <label><input type="radio" name="class" value="blue">blue</label>
-            </div>
-            <div class="form-row">
-                <label><input type="radio" name="class" value="yellow">yellow</label>
-            </div>
-            <div class="form-row" class="spacer">
-                <input type="submit">
-            </div>
-            </fieldset> 
+                <legend>Questions I have for you today</legend>
+                <div class="form-row">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="Username" id="firstname" placeholder="First Name">
+                </div>
+                <div class="form-row">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="Password" id="lastname" placeholder="Last Name">
+                </div>
+                <div class="form-row">
+                    <label for="cbox">Give Landon all your money:</label>
+                    <input type="checkbox" id="cbox">
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input class="mspacer" type="submit">
+                </div>
+            </fieldset>
         </form>
-        <h2>Questions:</h2>
+        <h2>Questions</h2>
         <ul>
-            <li>You can stly your form to even everything out. You can also change background colors using fieldset.</li>
-            <li>My profesor likes to use flex because it is easier to transition into mobile view. It also is just easy to format from columns to row.</li>
+            <li>JavaScript was made my sun micro systems. Javascript is a coding language that runs inside of the browser. It got its name because of the popularity of java.</li>
+            <li>The two ways to run it is within the browser(DOM), and by installing node.js.</li>
+            <li>JQuery was the most popular front end js library.</li>
+            <li>Eventually the browsers stablized and allowed React:js to rise to the spot of most popular library today.</li>
         </ul>
     </main>
     <footer>
         <p>Landon Frandsen 2024</p>
     </footer>
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event){
+            event.preventDefault();
+            const first = document.getElementById("firstname").value
+            const last = document.getElementById("lastname").value
+            if (!first || !last){
+                alert("You need a first and a last name")
+                return;
+            }
+            const formData ={
+                firstname:first,
+                lastname:last
+            }
+            console.log(formData);
+            alert("Form Submitted")
+        })
+    </script>
 </body>
 </html>
