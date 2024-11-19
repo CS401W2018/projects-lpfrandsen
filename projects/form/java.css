@@ -1,0 +1,33 @@
+.form-row{
+    display: flex;
+    margin: 5px;
+}
+.form-row label{
+    width:150px;
+    text-align: right;
+}
+.spacer{
+    display: flex;
+    justify-content: center;
+    width:45%;
+}
+body{
+    background-color: gainsboro;
+}
+header{
+    background-color: white;
+    text-align: center;
+    margin:30px
+}
+legend{
+    background-color: white;
+}
+footer{
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    margin:15px;
+}
+p{
+    margin:0;
+}
