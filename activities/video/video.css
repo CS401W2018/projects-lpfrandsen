@@ -1,0 +1,20 @@
+.btn{
+    display:block;
+    background-color: aquamarine;
+    padding:10px;
+    width:100px;
+    text-align: center;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.btn:hover{
+    background-color: blue;
+    color:white;
+}
+.bsbl img{
+    width:200px;
+    transform: rotate(8deg);
+    margin:10px;
+}
