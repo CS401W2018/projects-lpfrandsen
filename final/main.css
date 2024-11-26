@@ -1,0 +1,145 @@
+body{
+    background-color: rgb(49, 57, 117);
+}
+
+header{
+    background-color: rgb(39, 85, 108);
+    color:white;
+    padding:10px;
+    text-align: center;
+}
+.artist{
+    background-color: rgb(72, 46, 116);
+}
+
+h1{
+    margin:0;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+}
+
+nav a{
+    background-color: rgb(39, 85, 108);
+    margin:10px 5px;
+    padding:5px;
+    color:white;
+    text-decoration: none;
+}
+
+.main{
+    background-color: rgb(72, 46, 116);
+    color:white;
+    padding:10px;
+    margin: 10px;
+    width:75%;
+    
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer{
+    color:white;
+    text-align: center;
+    margin:20px;
+}
+
+table{
+    color:white;
+    border-spacing: 0;
+}
+table th, table td{
+    border:thin solid black;
+}
+
+table tbody tr:nth-child(even){
+    background-color: rgb(39, 85, 108);
+}
+table tbody tr:nth-child(odd){
+    background-color: rgb(72, 46, 116);
+}
+table thead{
+    background-color: rgb(45, 21, 87);
+}
+
+.toble{
+    display:flex;
+    justify-content: center;
+}
+.foot{
+    background-color: rgb(39, 85, 108);
+    display: flex;
+    justify-content: space-around;
+}
+p{
+    margin:0;
+}
+.close{
+    background-color: rgb(72, 46, 116);
+    color:white;
+    padding:10px;
+    margin: 10px;
+    width:75%;
+}
+
+.link{
+    color:white;
+}
+
+.purp{
+    background-color: rgb(72, 46, 116);
+    color:white;
+    padding:10px;
+}
+.form-row{
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+}
+label{
+    display: flex;
+    align-items: center;
+}
+figure{
+    border:thin solid white;
+    color:white;
+    background-color: rgb(39, 85, 108);
+    max-width: 300px;
+}
+
+.green{
+    background-color: rgb(39, 85, 108);
+    color:white;
+    padding:5px;
+}
+
+h3{
+    text-align: center;
+}
+
+.side{
+    max-width: 300px;
+}
+
+form{
+    background-color: rgb(39, 85, 108);
+    color:white;
+}
+
+@media only screen and (max-width: 700px){
+    nav{
+        flex-direction: column;
+    }
+    nav a{
+        padding:10px;
+        max-width: 150px;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .form-row{
+        flex-direction: column;
+    }
+}
